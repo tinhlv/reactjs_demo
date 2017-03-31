@@ -1,0 +1,95 @@
+.main-container{
+	#home_page{
+		background-position: center;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        position: relative;
+        .form-booking{
+        	 @include padding-all(100px, 0px, 100px, 0px);
+        	 .form-error{
+        	 	color: red;
+        	 }
+			.text_policy_top{
+				margin-bottom: 15px;
+				span{
+					color: #fff;
+					font-family: 'Josefin Sans', 'sans-serif';
+				}
+				a{
+					color: $color-primary;
+					text-decoration: underline !important;
+					font-weight: bold;
+				}
+			}
+        	.login_fb{
+    		    background: $bg_facebook;
+			    color: $white-color;
+			    width: 100%;
+			    @include margin-all(null, null, 20px, null);
+			    @include padding-all(12px, 12px, 12px, 12px);
+			    font-size: 18px;
+        	}
+        	.btn-sign{
+			 	@include button-bg($color-primary);
+			 	font-size: 30px;
+			 	font-family: 'Josefin Sans', 'sans-serif';
+        	}
+        	.panel{
+	        	.panel-body {
+				     @include padding-all(30px, 30px, 30px, 30px);
+				    .form-group{
+						label{
+							font-size: 16px;
+						    font-family: 'Josefin Sans', 'sans-serif';
+						    color: #333;
+						}
+					}
+
+					.gender_check{
+						[type="radio"] {
+						  border: 0;
+						  height: 1px; margin: -1px;
+						  padding: 0;
+						  position: absolute;
+						  width: 1px;
+						}
+						/* the basic, unchecked style */
+						[type="radio"] + span:before {
+						  content: '';
+						  display: inline-block;
+						  width: 1em;
+						  height: 1em;
+						  vertical-align: -0.25em;
+						  border-radius: 1em;           /*hard border*/
+						  border: 0.125em solid #fff;
+						  box-shadow: 0 0 0 0.1em #9144d2;
+						  margin-right: 0.75em;
+						  transition: 0.5s ease all;    /*animation here*/
+						}
+
+						/* the checked style using the :checked pseudo class */
+						[type="radio"]:checked + span:before {
+						    background: #9144d2;
+						}
+					}
+					.text_policy_bottom{
+						color: $color-text;
+						a{
+							color: $color-primary;
+							font-weight: bold;
+							 font-family: 'Josefin Sans', 'sans-serif';
+						}
+					}
+				}
+        	}
+        }
+	}
+}
+
+#username_error, #email_error, #password_error, #phone_error{
+	color: red;
+	font-size: 12px;
+}

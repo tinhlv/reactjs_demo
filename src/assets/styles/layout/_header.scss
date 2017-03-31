@@ -1,0 +1,95 @@
+.arrow-mobile{
+    display: none;
+}
+/* header-container */
+
+.header-container {
+    .header-content {
+        .header-top {
+            background: #030303;
+            @include padding-all(10px, 0px, 10px, 0px);
+            .top-left {
+                ul {
+                    li {
+                        float: left;
+                        list-style: none;
+                        a {
+                            i {
+                                display: inline-block;
+                                color: $white-color;
+                                font-size: 11px;
+                                background: #d0b5f1;
+                                @include padding-all(5px, 5px, 5px, 5px);
+                                @include border-radius(50%);
+                                @include margin-all(null, 5px, null, null);
+                            }
+                        }
+                        span {
+                            @include padding-all(null, null, null, 15px);
+                            color: $white-color;
+                            font-size: 13px;
+                            font-family: 'Josefin Sans', 'sans-serif';
+                        }
+                    }
+                }
+            }
+            .top-center {
+                span {
+                    font-family: 'Josefin Sans', 'sans-serif';
+                    color: $white-color;
+                }
+                a {
+                    i {
+                        color: $white-color;
+                    }
+                }
+            }
+            .top-right {
+                ul {
+                    li {
+                        list-style: none;
+                        display: inline-block;
+                        a {
+                            color: $white-color;
+                            text-decoration: none;
+                            @include margin-all(null, 20px, null, null);
+                            font-family: 'Josefin Sans', 'sans-serif';
+                        }
+                    }
+                }
+            }
+        }
+        /* header-top */
+        .header-bottom {
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            -ms-background-size: cover;
+             @include padding-all(20px, 0px, 20px, 0px);
+            .logo {}
+            .slogan {
+                h1 {
+                    font-size: 40px;
+                    color: $white-color;
+                    @include padding-all(20px, 0px, 20px, 0px);
+                }
+            }
+            .buton-booknow {
+                button {
+                    @include button-bg(#9144d2);
+                    @include padding-all(10px, 30px, 10px, 30px);
+                    @include margin-all(20px, null, null, null);
+                    font-family: 'Josefin Sans', 'sans-serif';
+                    font-size: 20px;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
+
+
+/*---header-container---*/

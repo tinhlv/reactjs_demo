@@ -1,0 +1,120 @@
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+        .form-booking .col-xs-12{
+            width: 60% !important;
+        }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+        .form-booking .col-xs-12{
+            width: auto !important;
+        }
+        .header-container .header-content .header-bottom .slogan h1{
+                font-size: 1.5em;
+        }
+        .main-container #home_page .form-booking {
+            padding: 50px 0px;
+        }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        .header-container .header-content .header-bottom .slogan h1{
+            font-size: 2em;
+        }
+        .logo{
+            text-align: center;
+        }
+        .header-container .header-content .header-bottom{
+            background: #303135 !important;
+        }
+        .header-container .header-content .header-bottom .slogan h1{
+             font-family: 'Josefin Sans', 'sans-serif';
+        }
+
+
+        .buton-booknow-mobile {
+            button {
+                @include button-bg(#9144d2);
+                @include padding-all(5px, 15px, 5px, 15px);
+                font-family: 'Josefin Sans', 'sans-serif';
+                font-size: 20px;
+                text-transform: capitalize;
+            }
+        }
+        .top-right ul{
+            margin-top: 10px;
+        }
+
+        .header-top .arrow-content{
+            text-align: center;
+            color: #fff;
+        }
+        .top-left{
+            text-align: center;
+            ul{
+                display: inline-block;
+            }
+
+        }
+        
+        .header-top .menu_mobile{
+            width: 100%;
+            padding: 10px 0px;
+        }
+    }
+
+    @media only screen and (max-width : 600px) {
+        .hidden-screen-600{
+            display: none;
+        }
+        .main-container #home_page .form-booking {
+            padding: 20px 0px;
+        }
+        .main-container #home_page .form-booking .panel .panel-body {
+            padding: 10px;
+        }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+        .header-container .header-content .header-bottom .slogan h1 {
+            font-size: 1.2em;
+        }
+        .logo{
+            img{
+                width: 185px;
+            }
+        }
+        .header-container .header-content .header-bottom{
+            padding: 15px;
+        }
+        .header-container .header-content .header-bottom .slogan h1{
+            padding: 10px 0px;
+        }
+        .header-container .header-content .header-bottom {
+            padding: 5px;
+        }
+    }
+    
+    @media only screen and (max-width : 393px) {
+        .hidden-screen-600{
+            display: none;
+        }
+        .header-container .header-content .header-top .top-left ul li span{
+            padding-left: 2px;
+        }
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        .top-right ul {
+            margin-top: 0px;
+            margin-left: 30px;
+        }
+        .header-container .header-content .header-top .top-left ul li{
+            float: none;
+            display: -webkit-inline-box;
+        }
+    }
